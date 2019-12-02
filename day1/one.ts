@@ -1,5 +1,8 @@
-const lineReader = require('readline').createInterface({
-    input: require('fs').createReadStream('input1.txt')
+import * as readline from "readline";
+import * as fs from "fs";
+
+const lineReader = readline.createInterface({
+    input: fs.createReadStream('input1.txt')
 });
 
 let sum = 0;
